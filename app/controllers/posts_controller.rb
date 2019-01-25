@@ -28,7 +28,6 @@ class PostsController < ApplicationController
 
   def body
     post = Post.find(params[:id])
-    # explicitly rendering plain text
     render plain: post.description
   end
 private
